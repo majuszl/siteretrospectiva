@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+:root{
+    --white:#F4F4F5;
+    --marrom:#925F64;
+    --bege: #FBF5E5;
+    --amarelo:#F4C366;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Espaçamento e distribuição */
+.d-flex{
+    display: flex;
+}
+
+.padding {
+    padding-right: 200px;
+}
+
+.padding1 {
+    padding-right: 80px;
+}
+
+.padding2 {
+    padding-left: 40px; 
+}
+.j-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.g-small {
+    gap: 18px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+header {
+    padding: 10px;
+}
+header a {
+    color: var(--amarelo);
+    font-size: 16px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* tamanho */
+
+
+/* texto */
+.comment {
+    opacity: 50%
+  }
+.upper {
+    text-transform: uppercase; 
+}
+.text-small{
+    font-size: 17px;
+}
+.title{
+    font-size: 35px;
+    letter-spacing: -4%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* classes */
+p {
+    padding: 40px;
+}
+
+.juntar {
+    line-height: 10px;
+}
+/* cores */
+body {
+    background-color: var(--white);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+    background-color: var(--white);
+}
+
+.amarelo {
+    color: var(--amarelo)
+}
+
+.marrom {
+    color: var(--marrom)
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* cartões */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cards .red {
+    background-color: var(--marrom);
+  }
+  
+  .cards .white {
+    background-color: var(--amarelo);
+    color: black;
+  }
+  
+  .cards .blue {
+    background-color: var(--marrom);
+    line-height: -150px;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    transition: 400ms;
+    line-height: -40px;
+  }
+  
+  .cards .card p.tip {
+    display: flex;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: -40px;
+  }
+  
+  .cards .card p.second-text {
+    display: flex;
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+/* fim do cartão */
+
+
+/* Footer */
+    footer .nome{
+        padding: 40px 0;
+    }
+    footer{
+        background-color: var(--marrom);
+        padding: 15px;
+    }
